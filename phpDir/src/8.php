@@ -33,7 +33,12 @@
 
 		// Step 2: Use crypt() function to encrypt it
 		// crypt() can take an optional salt; if you don't provide one, PHP generates a default
-		$encrypted = crypt($plainText, 'salt'); // 'salt' can be any string, e.g., 'xy'
+
+		// Using password_hash() for better security
+		$encrypted = password_hash($plainText, PASSWORD_BCRYPT);
+		
+		// Or using crypt() with a 'salt' ( 'salt' can be any string, e.g., 'xy')
+		//  $encrypted = crypt($plainText, 'salt'); 
 
 		// Step 3: Assign the crypt result to a variable
 		$hashedText = $encrypted; // Store the result in another variable (optional step)
