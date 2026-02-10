@@ -1,0 +1,69 @@
+# --------------------
+# OS
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# IDE / Editors
+# --------------------
+.vscode/
+.idea/
+*.swp
+
+# --------------------
+# Environment files
+# --------------------
+.env
+.env.*
+!.env.example
+
+# --------------------
+# Node.js
+# --------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------
+# Build / cache
+# --------------------
+dist/
+build/
+.cache/
+.tmp/
+
+# --------------------
+# PHP / Composer
+# --------------------
+vendor/
+composer.lock
+
+# --------------------
+# WordPress
+# --------------------
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# --------------------
+# Logs
+# --------------------
+logs/
+*.log
+
+# --------------------
+# Supabase
+# --------------------
+.supabase/
+supabase/.temp/
+
+# --------------------
+# Misc
+# --------------------
+*.zip
+*.tar.gz
+
